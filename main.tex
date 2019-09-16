@@ -1,0 +1,406 @@
+\documentclass[vruler,JCS]{COB}
+\unsetvruler
+\usepackage{boites}
+\RequirePackage{siunitx}
+% this line causes a l3regex obsolete warning - problem seems Overleaf-side
+\RequirePackage[version=4]{mhchem}
+%% Units
+\DeclareSIUnit\molar{\mole\per\cubic\deci\metre}
+\DeclareSIUnit\Molar{\textsc{m}}
+\DeclareSIUnit\Units{\textnormal{U}}
+%% Hyperlinking
+\RequirePackage[hidelinks]{hyperref}
+\RequirePackage{url}
+
+\begin{document}
+
+\supertitle{Research Article}
+%\supertitle{Tools and Techniques}
+
+\title{The title of a really cool paper}
+
+\author{First author$^{1}$ and Second author$^{2}$}
+
+\address{\add{1}{First author address}
+\add{2}{Second author address}}
+
+\corres{(\email{xxxx@xxxx.xxx.xx}; \email{xxxx@xxxx.xxx.xx})}
+
+\date{Received 1 May 2018; revised 5 December 2018}
+
+\maketitle
+
+\begin{abstract}
+Her Majesty's a pretty nice girl,
+but she doesn't have a lot to say
+Her Majesty's a pretty nice girl
+but she changes from day to day
+I want to tell her that I love her a lot
+But I gotta get a bellyful of wine
+Her Majesty’s a pretty nice girl
+Someday I'm going to make her mine, oh yeh,
+someday I'm going to make her mine.
+\end{abstract}
+
+\keywords{keyword entry 1, keyword entry 2, keyword entry~3}
+
+\section{Introduction}\label{s:introduction}
+
+When I get to the bottom I go back to the top of the slide
+Where I stop and I turn and I go for a ride
+Till I get to the bottom and I see you again.
+
+Do you, don't you want me to love you
+I'm coming down fast but I’m miles above you
+Tell me tell me tell me come on tell me the answer
+You may be a lover but you ain't no dancer.
+Helter skelter helter skelter
+Helter skelter.
+Will you, won't you want me to make you
+I'm coming down fast but don't let me break you
+Tell me tell me tell me the answer
+You may be a lover but you ain't no dancer.
+
+Look out helter skelter helter skelter
+Helter skelter 
+
+Look out, cause here she comes.
+
+When I get to the bottom I go back to the top of the slide
+And I stop and I turn and I go for a ride
+And I get to the bottom and I see you again
+
+Well do you, don't you want me to make you
+I'm coming down fast but don't let me break you
+Tell me tell me tell me the answer
+You may be a lover but you ain't no dancer.
+
+Look out helter skelter helter skelter
+Helter skelter
+Look out helter skelter
+She's coming down fast 
+Yes she is 
+Yes she is.
+
+When I get to the bottom I go back to the top of the slide
+Where I stop and I turn and I go for a ride
+Till I get to the bottom and I see you again.
+
+Do you, don't you want me to love you
+I'm coming down fast but I’m miles above you
+Tell me tell me tell me come on tell me the answer
+You may be a lover but you ain't no dancer.
+Helter skelter helter skelter
+Helter skelter.
+Will you, won't you want me to make you
+I'm coming down fast but don't let me break you
+Tell me tell me tell me the answer
+You may be a lover but you ain't no dancer.
+
+Look out helter skelter helter skelter
+Helter skelter 
+
+Look out, cause here she comes.
+
+When I get to the bottom I go back to the top of the slide
+And I stop and I turn and I go for a ride
+And I get to the bottom and I see you again
+
+Well do you, don't you want me to make you
+I'm coming down fast but don't let me break you
+Tell me tell me tell me the answer
+You may be a lover but you ain't no dancer.
+
+Look out helter skelter helter skelter
+Helter skelter
+Look out helter skelter
+She's coming down fast 
+Yes she is 
+Yes she is.
+
+When I get to the bottom I go back to the top of the slide
+Where I stop and I turn and I go for a ride
+Till I get to the bottom and I see you again.
+
+Do you, don't you want me to love you
+I'm coming down fast but I’m miles above you
+Tell me tell me tell me come on tell me the answer
+You may be a lover but you ain't no dancer.
+Helter skelter helter skelter
+Helter skelter.
+Will you, won't you want me to make you
+I'm coming down fast but don't let me break you
+Tell me tell me tell me the answer
+You may be a lover but you ain't no dancer.
+
+Look out helter skelter helter skelter
+Helter skelter 
+
+Look out, cause here she comes.
+
+When I get to the bottom I go back to the top of the slide
+And I stop and I turn and I go for a ride
+And I get to the bottom and I see you again
+
+Well do you, don't you want me to make you
+I'm coming down fast but don't let me break you
+Tell me tell me tell me the answer
+You may be a lover but you ain't no dancer.
+
+Look out helter skelter helter skelter
+Helter skelter
+Look out helter skelter
+She's coming down fast 
+Yes she is 
+Yes she is.
+
+
+\section{Results}\label{s:results}
+
+\subsection{Citations and full size figures with legends underneath}
+
+Text is added like this
+This is a reference to a published paper \citep{watson_molecular_1953}.
+
+This is a new paragraph.
+New sentences on a new line.
+New sentences on a new line.
+
+% this is how to add a comment
+This is a new result.
+% this is how to add a figure with the name sadie. It is commented out so the PDF will compile.
+As you can see (Figure \ref{fig:sadie}).
+
+% full size figure is figure*
+\begin{figure*}
+\centering
+\includegraphics[width=0.75\linewidth]{Figures/temp.png}
+\caption{\textbf{This is Sadie.}\\
+(\textbf{A}) This is a regular figure with a legend as a caption underneath. Inset: 3X zoom. Scale bar, \SI{10}{\micro\meter}.}
+\label{fig:sadie}
+\end{figure*}
+
+It is possible to add a one-column Figure like this (Figure \ref{fig:pam}).
+To add Supplementary Figures you can do either of these things and have them at the end of the end of the paper (Supplementary Figure \ref{suppfig:eleanor}).
+Or like this (Supplementary Figure \ref{suppfig:maxwell}).
+
+\subsection{Dongles can be used to extend the function of GFP}
+
+When I get to the bottom I go back to the top of the slide
+Where I stop and I turn and I go for a ride
+Till I get to the bottom and I see you again.
+
+Do you, don't you want me to love you
+I'm coming down fast but I’m miles above you
+Tell me tell me tell me come on tell me the answer
+You may be a lover but you ain't no dancer.
+Helter skelter helter skelter
+Helter skelter.
+Will you, won't you want me to make you
+I'm coming down fast but don't let me break you
+Tell me tell me tell me the answer
+You may be a lover but you ain't no dancer.
+
+Look out helter skelter helter skelter
+Helter skelter 
+
+Look out, cause here she comes.
+
+When I get to the bottom I go back to the top of the slide
+And I stop and I turn and I go for a ride
+And I get to the bottom and I see you again
+
+Well do you, don't you want me to make you
+I'm coming down fast but don't let me break you
+Tell me tell me tell me the answer
+You may be a lover but you ain't no dancer.
+
+Look out helter skelter helter skelter
+Helter skelter
+Look out helter skelter
+She's coming down fast 
+Yes she is 
+Yes she is.
+
+% one-column size figure is figure
+\begin{figure}
+\centering
+\includegraphics[width=0.75\linewidth]{Figures/temp.png}
+\caption{\textbf{This is Pam.}\\
+(\textbf{A}) This is a one-column figure with a legend as a caption underneath.}
+\label{fig:sadie}
+\end{figure}
+
+\subsection{Another subsection}
+
+She was a working girl
+North of England way
+Now she's hit the big time
+In the U.S.A.
+And if she could only hear me
+This is what I'd say.
+
+Honey pie you are making me crazy 
+I'm in love but I'm lazy
+So won't you please come home.
+
+Oh honey pie my position is tragic
+Come and show me the magic
+of your Hollywood song.
+
+You became a legend of the silver screen
+And now the thought of meeting you
+Makes me weak in the knee.
+
+Oh honey pie you are driving me frantic
+Sail across the Atlantic
+To be where you belong.
+
+Will the wind that blew her boat 
+Across the sea
+Kindly send her sailing back to me.
+
+Honey pie you are making me crazy
+I'm in love but I'm lazy
+So won't you please come home.
+
+\section{Discussion}\label{s:discussion}
+
+This is the discussion section where you wax lyrical about your findings.
+You can put your work in the context of other published work \citep{brenner_ug:_1967}
+
+In this paper, we described how we Flew in from Miami Beach BOAC
+Didn't get to bed last night
+On the way the paper bag was on my knee
+Man I had a dreadful flight
+I’m back in the U.S.S.R.
+You don't know how lucky you are boy
+Back in the U.S.S.R.
+
+Been away so long I hardly knew the place
+Gee it's good to be back home
+Leave it till tomorrow to unpack my case
+Honey disconnect the phone
+I'm back in the U.S.S.R.
+You don't know how lucky you are boy
+Back in the U.S.S.R.
+
+Well the Ukraine girls really knock me out
+They leave the West behind
+And Moscow girls make me sing and shout
+That Georgia's always on my mind.
+
+I'm back in the U.S.S.R.
+You don't know how lucky you are boys
+Back in the U.S.S.R.
+
+Show me round your snow peaked mountains way down south
+Take me to your daddy's farm
+Let me hear your balalaika’s ringing out
+Come and keep your comrade warm.
+I'm back in the U.S.S.R. 
+You don’t know how lucky you are boys
+Back in the U.S.S.R.
+
+\section{Methods}\label{s:methods}
+
+\subsection{Molecular biology}
+
+Details of plasmids are usually first.
+Followed by cell biology section.
+We have special units defied for molar and for units, e.g. \SI{1}{\Molar} sucrose, \SI{10}{\Units\per\milli\litre}.
+Otherwise use siunitx for everything else. \SI{37}{\degreeCelsius} and what-not.
+
+\subsection{Cell biology}
+
+Now somewhere in the black mountain hills of Dakota
+There lived a young boy named Rocky Raccoon
+And one day his woman ran off with another guy
+Hit young Rocky in the eye Rocky didn’t like that
+He said I’m gonna get that boy
+So one day he walked into town
+Booked himself a room in the local saloon.
+
+Rocky Raccoon checked into his room
+Only to find Gideon’s bible
+Rocky had come equipped with a gun
+To shoot off the legs of his rival
+His rival it seems had broken his dreams
+By stealing the girl of his fancy.
+Her name was Magil and she called herself Lil
+But everyone knew her as Nancy.
+Now she and her man who called himself Dan
+Were in the next room at the hoe down
+Rocky burst in and grinning a grin
+He said Danny boy this is a showdown
+But Daniel was hot-he drew first and shot
+And Rocky collapsed in the corner.
+
+Now the doctor came in stinking of gin
+And proceeded to lie on the table
+He said Rocky you met your match
+And Rocky said, Doc it’s only a scratch
+And I’ll be better I’ll be better doc as soon as I am able.
+
+Now Rocky Raccoon he fell back in his room
+Only to find Gideon’s bible
+Gideon checked out and he left it no doubt
+To help with good Rocky’s revival.
+
+
+%%% For acknowledgment
+\ack{
+Acknowledgements go here.}
+
+%%% For Competing interests
+\competing{
+The authors declare no competing or financial interests.}
+
+%%% For contribution
+\contribution{
+JL: Songwriting.
+PJM: Songwriting, singing and a bit of bass.}
+
+%%% For funding
+\funding{
+Funding information goes here}
+
+%%% For data availability
+% \data{Insert the Data availability text here.}
+
+%%% For supplementary
+\supplementary{
+Two supplementary figures are available below.}
+
+
+% \section{References}
+\newcommand{\newblock}{}
+\bibliographystyle{JCS.bst}
+\bibliography{example.bib}
+
+
+\clearpage
+
+\setcounter{figure}{0} % reset figure counter for Supp. Figures
+\makeatletter 
+\renewcommand{\thefigure}{S\@arabic\c@figure} % make Figure legend start with Figure S
+\makeatother
+
+
+\begin{figure*}
+\centering
+\includegraphics[width=0.75\linewidth]{Figures/temp.png}
+\caption{\textbf{This is Eleanor.}\\
+(\textbf{A}) This is a supplementary figure shown as a two-column image with a legend underneath.}
+\label{suppfig:eleanor}
+\end{figure*}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.75\linewidth]{Figures/temp.png}
+\caption{\textbf{This is Maxwell.}\\
+(\textbf{A}) This is a supplementary figure shown as a one-column image with a legend underneath.}
+\label{suppfig:maxwell}
+\end{figure}
+
+\end{document}
