@@ -1146,6 +1146,7 @@
 
 \renewenvironment{thebibliography}[1]{%
   \begingroup
+  \fontfamily{\sfdefault}
   \fontsize{7}{9}\selectfont
   \setcounter{secnumdepth}{0}
   \refsection*{\bibname}%
@@ -1163,6 +1164,7 @@
 \bibpunct[, ]{(}{)}{;}{a}{,}{;}
 \renewenvironment{thebibliography}[1]{%
   \begingroup
+  \fontfamily{\sfdefault}
   \fontsize{8}{10}\selectfont
   \setcounter{savesecnumdepth}{\value{secnumdepth}}%
   \setcounter{secnumdepth}{0}
@@ -1418,7 +1420,7 @@
 \let\euro\texteuro
 
 \newcommand{\address}[1]{\gdef\@address{#1}}\gdef\@address{}%
-\newcommand{\corres}[1]{\gdef\@corres{{Authors for correspondence:} #1}}\gdef\@corres{}%
+\newcommand{\corres}[1]{\gdef\@corres{{Author for correspondence:} #1}}\gdef\@corres{}%
 
 \def\name#1{#1\newline}
 \def\affil#1{{\textsuperscript{#1}}}
@@ -1455,10 +1457,10 @@
 
 \def\ack#1{{\vskip7.5pt\noindent{\fontfamily{\sfdefault}\fontseries{b}\fontshape{n}\fontsize{7.5}{9}\selectfont Acknowledgements}\par\noindent\fontfamily{\sfdefault}\fontsize{7}{9}\selectfont#1}}
 \def\competing#1{{\vskip7.5pt\noindent{\fontfamily{\sfdefault}\fontseries{b}\fontshape{n}\fontsize{7.5}{9}\selectfont Competing interests}\par\noindent\fontfamily{\sfdefault}\fontsize{7}{9}\selectfont#1}}
-\def\contribution#1{{\vskip7.5pt\noindent{\fontfamily{\sfdefault}\fontseries{b}\fontshape{n}\fontsize{7.5}{9}\selectfont Contribution}\par\noindent\fontfamily{\sfdefault}\fontsize{7}{9}\selectfont#1}}
+\def\contribution#1{{\vskip7.5pt\noindent{\fontfamily{\sfdefault}\fontseries{b}\fontshape{n}\fontsize{7.5}{9}\selectfont Author contributions}\par\noindent\fontfamily{\sfdefault}\fontsize{7}{9}\selectfont#1}}
 \def\funding#1{{\vskip7.5pt\noindent{\fontfamily{\sfdefault}\fontseries{b}\fontshape{n}\fontsize{7.5}{9}\selectfont Funding}\par\noindent\fontfamily{\sfdefault}\fontsize{7}{9}\selectfont#1}}
 \def\data#1{{\vskip7.5pt\noindent{\fontfamily{\sfdefault}\fontseries{b}\fontshape{n}\fontsize{7.5}{9}\selectfont Data availability}\par\noindent\fontfamily{\sfdefault}\fontsize{7}{9}\selectfont#1}}
-\def\supplementary#1{{\vskip7.5pt\noindent{\fontfamily{\sfdefault}\fontseries{b}\fontshape{n}\fontsize{7.5}{9}\selectfont Supplementary}\par\noindent\fontfamily{\sfdefault}\fontsize{7}{9}\selectfont#1}}
+\def\supplementary#1{{\vskip7.5pt\noindent{\fontfamily{\sfdefault}\fontseries{b}\fontshape{n}\fontsize{7.5}{9}\selectfont Supplementary information}\par\noindent\fontfamily{\sfdefault}\fontsize{7}{9}\selectfont#1}}
 
 \usepackage{url}
 \urlstyle{rm}
