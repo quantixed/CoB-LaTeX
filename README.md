@@ -10,7 +10,7 @@ To use:
 2. Write your manuscript in `main.tex`.
 3. Submit to _J Cell Sci_ and support _Company of Biologists_.
 
-To submit to another CoB journal or to add tables and equations to you paper, check out the HOW-TO in the root of the repo.
+To submit to another CoB journal or to add tables and equations to your paper, check out the HOW-TO in the root of the repo.
 
 ## What does it look like?
 
